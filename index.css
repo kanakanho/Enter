@@ -119,7 +119,7 @@
 	width: auto;
 	height: auto;
 	flex-direction: row;
-	flex-wrap
+	flex-wrap: wrap;
 }
 
 .contents1 {
