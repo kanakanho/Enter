@@ -119,6 +119,7 @@
 	width: auto;
 	height: auto;
 	flex-direction: row;
+	flex-wrap
 }
 
 .contents1 {
