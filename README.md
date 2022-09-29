@@ -1,3 +1,5 @@
 # Enter
 
-This web site made by kaho.
+このサイトはkanakanhoによって作られました。
+試験のために準備したページです。
+願わくば試験を通過できることを。
