@@ -3,164 +3,352 @@
 <head>
 <meta charset="UTF-8">
 <title>index</title>
-<link rel="stylesheet" href="index.css">
+/**<link rel="stylesheet" href="index.css">**/
 <style type="text/css">
-	body {
-	margin: 0;
-	padding: 0;
-	}
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family:"Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", "sans-serif";
+}
+
+.header {
+	display: flex;
+	justify-content: flex-start;
+	position: fixed;
+	width: 100%;
+	background-color: #000;
+}
+
+.header a {
+	width: 0px;
+	height: 0px;
+	color: #fff;
+	font-weight: 500;
+}
+
+.header-logo {
+	padding: 10px 0px 5px 15px;
+}
+
+.header-list li {
+	list-style-type: none;
+	float: left;
+	padding: 5px 18px 0px 18px;
+}
+
+.header-list a {
+	font-size: 17px;
+	color: #fff;
+}
+
+#main {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	padding: 30px 20%;
+}
+
+@media screen and (max-width: 1000px) {
+#main {
+	display: flex;
+	flex-direction: column;
+	width: 94%;
+	padding: 30px 3%;
+}
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	background-image:url("");
+	background-position:left;
+}
+
+.main-logo{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+#main1 .main-logo {
+	color: #39f;
+}
+
+#main2 .main-logo {
+	color: #0c6;
+}
+
+#main3 .main-logo {
+	color: #f93;
+}
+
+.main-logo h1{
+	margin: 70px 0px 10px 0px;
+	padding: 0px;
+}
+
+.contents-line {
+	display: flex;
+	width: auto;
+	margin: 25px 0px 0px 0px;
+	padding: 0px;
+	justify-content: center;
+}
+
+#main1 .contents-line {
+	border:groove medium #39f;
+}
+
+#main2 .contents-line {
+	border:groove medium #0f6;
+}
+
+#main3 .contents-line {
+	border:groove medium #f93;
+}
+
+.contents {
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	min-width: 0;
+	margin: 30px 0px 0px 0px;
+	background-color: #fff;
+}
+
+#main1 .contents {
+	border:outset 10px #6cf;
+}
+
+#main2 .contents {
+	border:outset 10px #3f9;
+}
+
+#main3 .contents {
+	padding: 7px;
+	border:outset 10px #fc3;
+	font-weight: bold;
+}
+
+.contents span{
+	font-size: 25px;
+	margin:15px;
+	color:  #c07;
+}
+
+.contents p{
+	font-size: 20px;
+	margin:15px;
+}
+
+.contents .span span {
+	font-size: 20px;
+	margin: 10px;
+}
+
+.footer{
+	background-color:#000;
+	padding: 50px 0px;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	color: #fff;
+}
+
+.account h1{
+	font-style:oblique;
+}
 </style>
 </head>
 <body>
 	<div class="header">
-		<div class="header-logo">
-		</div>
+		<div class="header-logo"></div>
 		<div class="header-list">
 			<ul>
-				<li><a id="main1" style="text-decoration: none;">テーマ</a></li>
-				<li><a id="main2" style="text-decoration: none;">参考リンク</a></li>
-				<li><a id="main3" style="text-decoration: none;">参考画像</a></li>
+				<li><a href="#main1" style="text-decoration: none;">テーマ</a></li>
+				<li><a href="#main2" style="text-decoration: none;">パワーポイント</a></li>
+				<li><a href="#main3" style="text-decoration: none;">参考用語</a></li>
 			</ul>
 		</div>
 	</div>
-	<div class="main">
-		<div id="main1" class="maina">
+	<div id="main">
+		<div id="main1" class="main">
 			<div class="main-logo">
 				<h1>テーマ</h1>
 			</div>
+			<div class="contents-line">
+			</div>
 			<div class="contents">
-				<div class="contents-line"></div>
-				<div class="contents">
-					<div class="contents1">
-						<span>1</span>
-						<p>社会問題による問題を理由として示し、情報技術を導入することによって、問題がどのように解決されることが効果として期待できるか</p>
-					</div>
-					<div class="contents1">
-						<span>2</span>
-						<p>情報通信技術を導入する際の課題</p>
-					</div>
-					<div class="contents1">
-						<span>3</span>
-						<p>情報通信技術の活用方法について一つの方法に注目</p>
-					</div>
-					<div class="contents1">
-						<span>4</span>
-						<p>注目した理由</p>
-					</div>
-					<div class="contents1">
-						<span>5</span>
-						<p>活用した場合に期待される効果</p>
-					</div>
-					<div class="contents1">
-						<span>6</span>
-						<p>導入する上での課題</p>
-					</div>
-				</div>
+				<span>1</span>
+				<p>社会問題による問題を理由として示し、情報技術を導入することによって、問題がどのように解決されることが効果として期待できるか</p>
+			</div>
+			<div class="contents">
+				<span>2</span>
+				<p>情報通信技術を導入する際の課題</p>
+			</div>
+			<div class="contents">
+				<span>3</span>
+				<p>情報通信技術の活用方法について一つの方法に注目</p>
+			</div>
+			<div class="contents">
+				<span>4</span>
+				<p>注目した理由</p>
+			</div>
+			<div class="contents">
+				<span>5</span>
+				<p>活用した場合に期待される効果</p>
+			</div>
+			<div class="contents">
+				<span>6</span>
+				<p>導入する上での課題</p>
 			</div>
 		</div>
-		<div id="main2" class="maina">
+		<div id="main2" class="main">
 			<div class="main-logo">
 				<h1>パワーポイント</h1>
 			</div>
+			<div class="contents-line"></div>
 			<div class="contents">
-				<div class="contents-line"></div>
-				<div class="contents">
-					<div class="contents2">
-						<span>1</span>
-						<p>題『"テーマ"における情報通信技術の活用について』<br>『愛知工業大学名電高等学校　柴田　青賢』</p>
-					</div>
-					<div class="contents2">
-						<span>2</span>
-						<p>題『"テーマ"における問題点について』</p>
-					</div>
-					<div class="contents2">
-						<span>3</span>
-						<p>二枚目の補足説明</p>
-					</div>
-					<div class="contents2">
-						<span>4</span>
-						<p>題『活用できる情報技術』</p>
-					</div>
-					<div class="contents2">
-						<span>5</span>
-						<p>題『情報技術の活用により期待される効果』</p>
-					</div>
-					<div class="contents2">
-						<span>6</span>
-						<p>題『情報技術を活用する上での課題』</p>
-					</div>
-					<div class="contents2">
-						<span>7</span>
-						<p>題『まとめ』<br>_『"技術"を活用することで』</p>
-					</div>
-				</div>
+				<span>1</span>
+				<p>題『"テーマ"における情報通信技術の活用について』<br>『愛知工業大学名電高等学校　柴田　青賢』</p>
+			</div>
+			<div class="contents">
+				<span>2</span>
+				<p>題『"テーマ"における問題点について』</p>
+			</div>
+			<div class="contents">
+				<span>3</span>
+				<p>二枚目の補足説明</p>
+			</div>
+			<div class="contents">
+				<span>4</span>
+				<p>題『活用できる情報技術』</p>
+			</div>
+			<div class="contents">
+				<span>5</span>
+				<p>題『情報技術の活用により期待される効果』</p>
+			</div>
+			<div class="contents">
+				<span>6</span>
+				<p>題『情報技術を活用する上での課題』</p>
+			</div>
+			<div class="contents">
+				<span>7</span>
+				<p>題『まとめ』<br>『"技術"を活用することで』</p>
 			</div>
 		</div>
-		<div id="main3" class="maina">
+		<div id="main3" class="main">
 			<div class="main-logo">
 				<h1>参考用語</h1>
 			</div>
+			<div class="contents-line"></div>
 			<div class="contents">
-				<div class="contents-line"></div>
-				<div class="contents">
-					<div class="contents1">
-						<span>クラウドコンピューティング</span>
-						<p>SaaS</p>
-						<p>PaaS</p>
-						<p>IaaS</p>
-					</div>
-					<div class="contents1">
-						<span>仮想デスクトップ</span>
-						<p>DaaS</p>
-						<p>VDI</p>
-					</div>
-					<div class="contents1">
-						<span>Peer to Peer</span>
-						<p></p>
-					</div>
-					<div class="contents1">
-						<span>ブロックチェーン</span>
-						<p></p>
-					</div>
-					<div class="contents1">
-						<span>デジタルツイン</span>
-						<p></p>
-					</div>
-					<div class="contents1">
-						<span>SNS</span>
-						<p></p>
-					</div>
-					<div class="contents1">
-						<span>API</span>
-						<p></p>
-					</div>
-					<div class="contents1">
-							<span>スクレイピング</span>
-						<p></p>
-					</div>
-					<div class="contents1">
-						<span>IDaaS</span>
-						<p></p>
-						</div>
-					<div class="contents1">
-						<span>MaaS</span>
-						<p></p>
-					</div>
-					<div class="contents1">
-						<span>AI</span>
-						<p></p>
-					</div>
-					<div class="contents1">
-						<span>XR</span>
-						<p>AR</p>
-						<p>VR</p>
-						<p>MR</p>
-						<p></p>
-					</div>
-					<div class="contents1">
-						<span>メタバース</span>
-						<p></p>
-					</div>
+				<div class="span">
+					<span>クラウドコンピューティング</span>
+				</div>
+				<div class="p">
+					<p>SaaS</p>
+					<p>PaaS</p>
+					<p>IaaS</p>
+				</div>
+			</div>
+			<div class="contents">
+				<div class="span">
+					<span>仮想デスクトップ</span>
+				</div>
+				<div class="p">
+					<p>DaaS</p>
+					<p>VDI</p>
+				</div>	
+			</div>
+			<div class="contents">
+				<div class="span">
+					<span>Peer to Peer</span>
+				</div>
+				<div class="p">
+					<p></p>
+				</div>
+			</div>
+			<div class="contents">
+				<div class="span">
+					<span>ブロックチェーン</span>
+				</div>
+				<div class="p">
+					<p></p>
+				</div>
+			</div>
+			<div class="contents">
+				<div class="span">
+					<span>デジタルツイン</span>
+				</div>
+				<div class="p">
+					<p></p>
+				</div>
+			</div>
+			<div class="contents">
+				<div class="span">
+					<span>SNS</span>
+				</div>
+				<div class="p">
+					<p></p>
+				</div>
+			</div>
+			<div class="contents">
+				<div class="span">
+					<span>API</span>
+				</div>
+				<div class="p">
+					<p></p>
+				</div>
+			</div>
+			<div class="contents">
+				<div class="span">
+					<span>スクレイピング</span>
+				</div>
+				<div class="p">
+					<p></p>
+				</div>
+			</div>
+			<div class="contents">
+				<div class="span">
+					<span>IDaaS</span>
+				</div>
+				<div class="p">
+					<p></p>
+				</div>
+			</div>
+			<div class="contents">
+				<div class="span">
+					<span>MaaS</span>
+				</div>
+				<div class="p">
+					<p></p>
+				</div>
+			</div>
+			<div class="contents">
+				<div class="span">
+					<span>AI</span>
+				</div>
+				<div class="p">
+					<p></p>
+				</div>
+			</div>
+			<div class="contents">
+				<div class="span">
+					<span>XR</span>
+				</div>
+				<div class="p">
+					<p>AR</p>
+					<p>VR</p>
+					<p>MR</p>
+				</div>
+			</div>
+			<div class="contents">
+				<div class="span">
+					<span>メタバース</span>
+				</div>
+				<div class="p">
+					<p></p>
 				</div>
 			</div>
 		</div>
